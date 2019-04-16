@@ -1,0 +1,21 @@
+{
+  "name": "generatehashtags",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "zip -r generateHashtags.zip ./",
+    "deploy": "aws lambda update-function-code --region us-east-1 --zip-file fileb://generateHashtags.zip --function-name generateHashtags"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.1"
+  },
+  "dependencies": {
+    "random-words": "^1.1.0"
+  }
+}
